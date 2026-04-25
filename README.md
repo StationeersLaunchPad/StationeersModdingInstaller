@@ -7,12 +7,18 @@ A single-file Windows wizard that installs **BepInEx** and **Stationeers LaunchP
 ## What it does
 
 1. Detects the Stationeers install folder automatically (Steam registry + common paths) or lets the user enter one manually.
-2. Validates that `rocketstation.exe` exists in the chosen folder.
-3. Downloads **BepInEx 5.4.23.2** (win-x64) from GitHub, verifies its SHA-256 checksum, and extracts it into the game root.
-4. Fetches the **latest stable Stationeers LaunchPad** client release from the GitHub Releases API and extracts it into `BepInEx/plugins/StationeersLaunchPad/`.
-5. Shows real-time progress and log output for each step.
+<img width="817" height="492" alt="image" src="https://github.com/user-attachments/assets/992548d3-3f8a-447f-8962-c33d5cf5f61d" />
+2. Prompts the user to confirm the install location is correct, offering to change it
+<img width="817" height="492" alt="image" src="https://github.com/user-attachments/assets/43a0dc28-6308-4acd-872e-83340bd9b370" />
+4. Validates that `rocketstation.exe` exists in the chosen folder.
+5. Downloads **BepInEx 5.4.23.2** (win-x64) from GitHub, verifies its SHA-256 checksum, and extracts it into the game root.
+<img width="817" height="492" alt="image" src="https://github.com/user-attachments/assets/e394b1c9-d96f-4b82-ad1c-5cf6a9bd80ca" />
+7. Fetches the **latest stable Stationeers LaunchPad** client release from the GitHub Releases API and extracts it into `BepInEx/plugins/StationeersLaunchPad/`.
+<img width="817" height="492" alt="image" src="https://github.com/user-attachments/assets/9553d0eb-7af7-4e75-a54a-5cd02d3df9df" />
+8. Tells the user if the installation succeeded
+<img width="817" height="492" alt="image" src="https://github.com/user-attachments/assets/bb948934-5c6d-48bc-b028-4ec9a20234a4" />
 
-No game files are modified beyond the mod loader setup. The installer can be re-run safely - it overwrites existing BepInEx/SLP files.
+**No game files are modified beyond the mod loader setup. The installer can be re-run safely - it overwrites existing BepInEx/SLP files.**
 
 ---
 
@@ -21,7 +27,7 @@ No game files are modified beyond the mod loader setup. The installer can be re-
 | Layer | Technology |
 |---|---|
 | UI | Vanilla HTML/CSS/JS (embedded in the exe, no server) |
-| Backend | Go 1.22+ |
+| Backend | Go 1.22+ (1.26)|
 | Desktop shell | [Wails v2](https://wails.io) (WebView2) |
 | Output | Single `.exe`, ~10 MB, no installer required |
 
