@@ -1,0 +1,23 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "StationeersModdingInstaller",
+  "outputfilename": "StationeersModdingInstaller",
+  "frontend:install": "",
+  "frontend:build": "",
+  "frontend:dev:watcher": "",
+  "frontend:dev:serverUrl": "",
+  "wailsdir": "",
+  "version": "2",
+  "info": {
+    "companyName": "JacksonTheMaster - JXSN.dev",
+    "productName": "Stationeers Modding Installer",
+    "productVersion": "1.0.0",
+    "copyright": "Copyright JXSN 2025",
+    "comments": "Standalone BepInEx + SLP installer for Stationeers Modding"
+  },
+  "debounceMS": 100,
+  "devServer": "localhost:34115",
+  "appargs": "",
+  "health": false,
+  "garbleargs": ""
+}
