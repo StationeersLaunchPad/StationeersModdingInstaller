@@ -1,7 +1,10 @@
 # Stationeers Modding Installer
 
-A single-file Windows wizard that installs **BepInEx** and **Stationeers LaunchPad** into a Stationeers game folder. No .NET runtime, no dependencies - just run the exe.
+[![Download convenience Installer](https://img.shields.io/badge/Download-convenience%20Installer-ff8300?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/StationeersLaunchPad/StationeersModdingInstaller/releases/latest/download/StationeersModdingInstaller.exe)
 
+A single-file **_Windows_** wizard that **installs BepInEx** and **StationeersLaunchPad** into the Stationeers game folder. 
+No .NET runtime, no dependencies - just run the exe and you are good to go. 
+Requires WebView2 (default in modern windows distributions)
 ---
 
 ## What it does
